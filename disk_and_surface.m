@@ -20,7 +20,7 @@ mu = 17.72e-6; % Dynamic Viscosity [N*s/m^2]
 
 Cp = 1004.8; % Specific heat [J/kg*K]
 R = 287; % Gas constant [J/kg*K]
-mu_oleo = 2.9e-1; % Oil viscosity [N*s/m^2]
+mu_oil = 2.9e-1; % Oil viscosity [N*s/m^2]
 e = 0.8e-6; % Oil gap [m]
 hp = 2e-3; % Disk thickness [m]
 smax = 0.00092; % Maximum amplitude of the surface [m]
@@ -82,7 +82,7 @@ for i = 1:np
     % yn_1(7) = Vb
     
         
-        yn(1) = yn_1(1) + dt * ((((yn_1(2) * R * yn_1(4) - Patm) * Ap) / mp) - g - (mu_oleo * yn_1(1) * pi * dp * hp / (e*mp)));
+        yn(1) = yn_1(1) + dt * ((((yn_1(2) * R * yn_1(4) - Patm) * Ap) / mp) - g - (mu_oil * yn_1(1) * pi * dp * hp / (e*mp)));
         yn(2) = yn_1(2) - (dt * (yn_1(2) * (yn(1) - yn_1(7)))) / yn_1(3);
         yn(3) = yn_1(3) - dt * (yn_1(7) - yn(1));
         yn(4) = yn_1(4) +  dt * ((4/3 * mu * (((yn(1) - yn_1(7)) / yn(3))^2) / (yn(2) * Cp)) + (((yn(2) * R *yn_1(4)-Patm) * (yn(2) - yn_1(2))) / (( yn(2) * Cp) * (yn(2) *dt))));
