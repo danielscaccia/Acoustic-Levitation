@@ -44,7 +44,7 @@ T = 15 + 273; % Initial Temperature [K]
 V = 0; % Initial disk speed [m/s]
 Vb = 0; % Initial surface speed [m/s]  
 
-mg = rho*Ap*L; % Mass of gas contained in the container [kg] (SHOULD BE CLOSE TO CONSTANT)
+mg = rho * Ap * L; % Mass of gas contained in the container [kg] (SHOULD BE CLOSE TO CONSTANT)
 
 
 
