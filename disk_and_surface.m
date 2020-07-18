@@ -24,7 +24,7 @@ mu_oil = 2.9e-1; % Oil viscosity [N*s/m^2]
 e = 0.8e-6; % Oil gap [m]
 hp = 2e-3; % Disk thickness [m]
 smax = 0.00092; % Maximum amplitude of the surface [m]
-f = 9; % Vibration frequency of the surface [Hz]
+f = 15; % Vibration frequency of the surface [Hz]
 
 
 
@@ -36,7 +36,7 @@ sb = 0; % Initial lenght of the surface [m]
 rho = 1.22; % Initial specific mass [kg/m^3]
 
 t = 0; % Initial time [s]
-tf = 3; % Final time [s]
+tf = 2; % Final time [s]
 dt = 0.0000004; % Time step [s], in the beginning it was 0.00000005
 np = (tf-t)/dt; % Number of steps
 
