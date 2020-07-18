@@ -24,7 +24,7 @@ mu_oil = 2.9e-1; % Oil viscosity [N*s/m^2]
 e = 0.8e-6; % Oil gap [m]
 hp = 2e-3; % Disk thickness [m]
 smax = 0.00092; % Maximum amplitude of the surface [m]
-f = 15; % Vibration frequency of the surface [Hz]
+f = 0; % Vibration frequency of the surface [Hz]
 
 
 
