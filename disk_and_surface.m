@@ -20,7 +20,7 @@ mu = 17.72e-6; % Dynamic Viscosity [N*s/m^2]
 
 Cp = 1004.8; % Specific heat [J/kg*K]
 R = 287; % Gas constant [J/kg*K]
-mu_oil = 2.9e-1; % Oil viscosity [N*s/m^2]
+mu_oil = 0; % Oil viscosity [N*s/m^2]
 e = 0.8e-6; % Oil gap [m]
 hp = 2e-3; % Disk thickness [m]
 smax = 0.00092; % Maximum amplitude of the surface [m]
